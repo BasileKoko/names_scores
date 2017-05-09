@@ -7,7 +7,7 @@ class NameScore
   end
 
   def sort_names(names_array)
-    names_array.sort
+  sorted_names_array = names_array.sort
   end
 
   def name_value(sorted_names_array)
@@ -23,5 +23,5 @@ class NameScore
   def name_value_and_position(name_value, name_position)
     name_value_name_position = name_value.zip(name_position)
   end
-  
+
 end
