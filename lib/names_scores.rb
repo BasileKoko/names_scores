@@ -7,7 +7,7 @@ class NameScore
   end
 
   def sort_names(names)
-  sorted_names = names.sort
+    sorted_names = names.sort
   end
 
   def name_value(sorted_names)
@@ -26,6 +26,10 @@ class NameScore
   end
 
   def name_score(names_values_names_positions)
-      names_scores = names_values_names_positions.map { |array| array[0] * array[1] }
+    names_scores = names_values_names_positions.map { |array| array[0] * array[1] }
+  end
+
+  def total_name_score(names_scores)
+    total_name_scores = names_scores.reduce(:+)
   end
 end
