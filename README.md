@@ -27,7 +27,7 @@ $ cd names_scores
 ```
 ### To run program
 ```
-$ ruby lib/names_scores.rb
+$ ruby lib/run_names_scores.rb
 ```
 ### To run test
 
