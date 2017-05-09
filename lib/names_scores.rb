@@ -21,7 +21,7 @@ class NameScore
     names_positions = sorted_names.map { |name| sorted_names.index(name) + 1 }
   end
 
-  def name_value_and_position(names_values, names_positions)
+  def name_value_name_position(names_values, names_positions)
     names_values_names_positions = names_values.zip(names_positions)
   end
 

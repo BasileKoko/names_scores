@@ -32,7 +32,7 @@ describe NameScore do
     it 'should return array with name value and name position' do
       names_values = [42, 55, 48]
       names_positions = [1, 2, 3]
-      expect(subject.name_value_and_position(names_values, names_positions)).to eq [[42, 1], [55, 2], [48, 3]]
+      expect(subject.name_value_name_position(names_values, names_positions)).to eq [[42, 1], [55, 2], [48, 3]]
     end
   end
 
