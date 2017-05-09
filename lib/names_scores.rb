@@ -2,8 +2,8 @@ class NameScore
 
   def file_to_array(file='names.txt')
     read_file = File.read(file)
-    remove_quote_and_newline = read_file.gsub(/\"/, "").strip
-    names = remove_quote_and_newline.split(',')
+    no_quote_and_newline = read_file.gsub(/\"/, "").strip
+    names = no_quote_and_newline.split(',')
   end
 
   def sort_names(names)
