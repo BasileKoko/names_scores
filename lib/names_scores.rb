@@ -31,5 +31,6 @@ class NameScore
 
   def total_name_score(names_scores)
     total_name_scores = names_scores.reduce(:+)
+    "The total name scores in the file is: #{total_name_scores}"
   end
 end

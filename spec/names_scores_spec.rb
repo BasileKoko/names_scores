@@ -46,7 +46,7 @@ describe NameScore do
   describe '#total_name_score' do
     it 'should return the total name scores in the file' do
       names_scores = [42, 110, 144]
-      expect(subject.total_name_score(names_scores)).to eq  296
+      expect(subject.total_name_score(names_scores)).to eq "The total name scores in the file is: 296"
     end
   end
 end
