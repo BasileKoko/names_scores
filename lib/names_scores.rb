@@ -9,4 +9,11 @@ class NameScore
   def sort_names(names_array)
     names_array.sort
   end
+
+  def name_value(sorted_names_array)
+    alphabet = ("A".."Z").to_a
+    split_each_name = sorted_names_array.map { |name| name.split('') }
+    each_name_letter_value = split_each_name.map { |name| name.map { |letter| alphabet.index(letter) + 1 } }
+    each_name_value = each_name_letter_value.map { |value| value.reduce(:+) }
+  end
 end
