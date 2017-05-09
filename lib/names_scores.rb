@@ -12,16 +12,16 @@ class NameScore
 
   def name_value(sorted_names_array)
     alphabet = ("A".."Z").to_a
-    split_each_name = sorted_names_array.map { |name| name.split('') }
-    each_name_letter_value = split_each_name.map { |name| name.map { |letter| alphabet.index(letter) + 1 } }
-    each_name_value = each_name_letter_value.map { |value| value.reduce(:+) }
+    split_names = sorted_names_array.map { |name| name.split('') }
+    names_letters_values = split_names.map { |name| name.map { |letter| alphabet.index(letter) + 1 } }
+    names_values = names_letters_values.map { |value| value.reduce(:+) }
   end
 
   def name_position(sorted_names_array)
-    each_name_position = sorted_names_array.map { |name| sorted_names_array.index(name) + 1 }
+    names_positions = sorted_names_array.map { |name| sorted_names_array.index(name) + 1 }
   end
-  def name_value_and_position(name_value, name_position)
-    name_value_name_position = name_value.zip(name_position)
+  def name_value_and_position(names_values, names_positions)
+    name_value_name_position = names_values.zip(names_positions)
   end
 
 end
