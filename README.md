@@ -16,5 +16,5 @@ So, COLIN would obtain a score of 938 × 53 = 49714.
 
 What is the total of all the name scores in the file?
 
-source: https://projecteuler.net/problem=22
+source: [names_scores_exercise](https://projecteuler.net/problem=22)
 ```
