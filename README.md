@@ -1,6 +1,6 @@
 ## NAMES_SCORES CODE EXERCISE
 
-This repository contains solution to names_scores code exercise.
+This repository contains solution to names_scores code exercise.  
 [names_scores_exercise](https://projecteuler.net/problem=22)
 
 ### Task
