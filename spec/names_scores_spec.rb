@@ -35,4 +35,11 @@ describe NameScore do
       expect(subject.name_value_and_position(names_values, names_positions)).to eq [[42, 1], [55, 2], [48, 3]]
     end
   end
+
+  describe '#names_scores' do
+    it 'should return the score of each name' do
+      name_value_name_position_array = [[42, 1], [55, 2], [48, 3]]
+      expect(subject.names_scores(name_value_name_position_array)).to eq [42, 110, 144]
+    end
+  end
 end
