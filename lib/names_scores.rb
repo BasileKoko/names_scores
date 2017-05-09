@@ -16,4 +16,8 @@ class NameScore
     each_name_letter_value = split_each_name.map { |name| name.map { |letter| alphabet.index(letter) + 1 } }
     each_name_value = each_name_letter_value.map { |value| value.reduce(:+) }
   end
+
+  def name_position(sorted_names_array)
+    each_name_position = sorted_names_array.map { |name| sorted_names_array.index(name) + 1 }
+  end
 end
