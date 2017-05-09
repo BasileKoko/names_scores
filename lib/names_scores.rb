@@ -20,4 +20,8 @@ class NameScore
   def name_position(sorted_names_array)
     each_name_position = sorted_names_array.map { |name| sorted_names_array.index(name) + 1 }
   end
+  def name_value_and_position(name_value, name_position)
+    name_value_name_position = name_value.zip(name_position)
+  end
+  
 end
