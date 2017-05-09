@@ -25,7 +25,5 @@ class NameScore
     name_value_name_position = names_values.zip(names_positions)
   end
 
-  def name_score(name_value_name_position)
-      names_scores = name_value_name_position.map { |array| array[0] * array[1] }
-  end
+  
 end
