@@ -1,6 +1,7 @@
 ## NAMES_SCORES CODE EXERCISE
 
 This repository contains solution to names_scores code exercise.
+[names_scores_exercise](https://projecteuler.net/problem=22)
 
 ### Task
 ```
@@ -16,7 +17,6 @@ So, COLIN would obtain a score of 938 × 53 = 49714.
 
 What is the total of all the name scores in the file?
 ```
-[names_scores_exercise](https://projecteuler.net/problem=22)
 
 ### Setup
 ```
