@@ -18,16 +18,16 @@ What is the total of all the name scores in the file?
 ```
 [names_scores_exercise](https://projecteuler.net/problem=22)
 
-###Setup
+### Setup
 ```
 $ git clone https://github.com/BasileKoko/names_scores.git
 $ cd names_scores
 ```
-###To run program
+### To run program
 ```
 $ ruby lib/names_scores.rb
 ```
-###To run test
+### To run test
 
 ```
 $ rspec
