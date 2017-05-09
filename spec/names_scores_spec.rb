@@ -28,7 +28,7 @@ describe NameScore do
     end
   end
 
-  describe '#name_value_and_position' do
+  describe '#name_value_name_position' do
     it 'should return array with name value and name position' do
       names_values = [42, 55, 48]
       names_positions = [1, 2, 3]
