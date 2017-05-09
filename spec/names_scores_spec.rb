@@ -9,22 +9,22 @@ describe NameScore do
 
   describe '#sort_names' do
     it 'should sort the names by alphabetical order' do
-      names_array = ["TOM", "SHEER", "JERI"]
-      expect(subject.sort_names(names_array)).to eq ["JERI", "SHEER", "TOM"]
+      names = ["TOM", "SHEER", "JERI"]
+      expect(subject.sort_names(names)).to eq ["JERI", "SHEER", "TOM"]
     end
   end
 
   describe '#name_value' do
     it 'should return the value of each name' do
-      sorted_names_array = ["JERI", "SHEER", "TOM"]
-      expect(subject.name_value(sorted_names_array)).to eq [42, 55, 48]
+      sorted_names = ["JERI", "SHEER", "TOM"]
+      expect(subject.name_value(sorted_names)).to eq [42, 55, 48]
     end
   end
 
   describe '#name_position' do
     it 'should return the position of each name' do
-      sorted_names_array = ["JERI", "SHEER", "TOM"]
-      expect(subject.name_position(sorted_names_array)).to eq [1, 2, 3]
+      sorted_names = ["JERI", "SHEER", "TOM"]
+      expect(subject.name_position(sorted_names)).to eq [1, 2, 3]
     end
   end
 
@@ -33,13 +33,6 @@ describe NameScore do
       names_values = [42, 55, 48]
       names_positions = [1, 2, 3]
       expect(subject.name_value_and_position(names_values, names_positions)).to eq [[42, 1], [55, 2], [48, 3]]
-    end
-  end
-
-  describe '#names_scores' do
-    it 'should return the score of each name' do
-      name_value_name_position_array = [[42, 1], [55, 2], [48, 3]]
-      expect(subject.names_scores(name_value_name_position_array)).to eq [42, 110, 144]
     end
   end
 end
