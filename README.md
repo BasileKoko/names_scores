@@ -2,7 +2,7 @@
 
 This repository contains solution to names_scores code exercise.  
 The main code path is names_scores/lib/names_scores.rb  
-The path of the file used for running the code is names_scores/lib/run_names_scores.rb    
+The path of the file used to run the code is names_scores/lib/run_names_scores.rb    
 The test code path is names_scores/spec/names_scores_spec.rb  
 [names_scores_exercise](https://projecteuler.net/problem=22)
 
