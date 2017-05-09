@@ -20,4 +20,11 @@ describe NameScore do
       expect(subject.name_value(sorted_names_array)).to eq [42, 55, 48]
     end
   end
+
+  describe '#name_position' do
+    it 'should return the position of each name' do
+      sorted_names_array = ["JERI", "SHEER", "TOM"]
+      expect(subject.name_position(sorted_names_array)).to eq [1, 2, 3]
+    end
+  end
 end
